@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<LJSentiment-Config>
+
+<eventcategory>
+<categorynum>1</categorynum> 
+
+<category id="1">
+	<description>人物、事件、组织</description>
+	<brandword>胡温十年|比胡温|袁世凯|胡锦涛|毛邓|毛邓江|习仲勋|邓小平|丘吉尔|希特勒|吉尔|明洪武|新淦|习玉策|习永盛|习永山|习永厚|张氏|习宗德|习宗仁|陈凯|彭丽媛|荆福生|贺国强|习近平|</brandword>
+	<featureword>
+  </featureword>
+  <sentimentword>
+     <advantage>|[positive.dat]|</advantage>
+     <disadvantage>|[negative.dat]|</disadvantage>
+     <negative>|[否]|</negative>
+  </sentimentword>
+</category>
+</eventcategory>	
+
+<wordset>
+<set tag="否">|不|没有|</set>
+</wordset>
+
+<remove>
+
+<remove tag="sentence"> 
+	<description>句子排除 </description>
+	<removesentence>	
+|真的要|什么时候|的吗|或|了吗|什么|如果|假如|假若|假使|倘若|万一|只要|只有|听说|传闻|何时|请问|是否|与否|？|希望|或许|
+	</removesentence>
+</remove>
+
+<remove tag="word">
+	<description>构词排除 </description>
+	<removeword>
+|高不高|贵不贵|好不好|
+	</removeword>
+</remove>
+
+</remove>
+
+</LJSentiment-Config>
